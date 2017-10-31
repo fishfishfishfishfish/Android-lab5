@@ -36,6 +36,7 @@ public class StaticReceiver extends BroadcastReceiver {
                     .setAutoCancel(true);
             //绑定Intent，点击可以进入某activity
             Intent mIntent = new Intent(context, detail.class);
+            mIntent.addCategory(Intent.CATEGORY_LAUNCHER);
             String chose_name = bundle.getString("name");
             mIntent.putExtra("goodsName", chose_name);
             PendingIntent mPendingIntent = PendingIntent.getActivity(context,0,mIntent,PendingIntent.FLAG_ONE_SHOT);

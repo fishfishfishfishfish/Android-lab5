@@ -172,6 +172,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Bundle extras = this.getIntent().getExtras();
+        if(extras != null)
+        {
+            if(extras.getString("in_to_shopping_list").equals("go"))
+            {
+                goodsRecyclerView.setVisibility(View.GONE);
+                shoppingListView.setVisibility(View.VISIBLE);
+                SwitchBtn.setImageResource(R.drawable.mainpage);
+            }
+        }
     }
 
     //需要更新this的Intent

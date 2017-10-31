@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00000000"
-    android:padding="@dimen/widget_margin">
+    android:background="#2F0000FF"
+    android:padding="@dimen/widget_margin"
+    android:id="@+id/m_widget">
 
     <ImageView
         android:id="@+id/shopping_cart_in_wiget"
@@ -23,8 +24,8 @@
         android:background="#00000000"
         android:contentDescription="@string/appwidget_text"
         android:text="@string/appwidget_text"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:textStyle="bold|italic" />
 
 </RelativeLayout>
